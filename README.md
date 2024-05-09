@@ -22,7 +22,7 @@ This project demonstrates the implementation of four types of communication betw
 ## Installation
 
 1. Clone the repository:
-   git clone https://your-repository-url-here
+   git clone https://github.com/Kevincxv/Go-gRPC-Demo
    cd Go-gRPC-Demo
 2. Install Dependencies:
    go mod tidy
