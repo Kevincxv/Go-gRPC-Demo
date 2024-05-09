@@ -22,7 +22,7 @@ func callSayHelloClientStream(client pb.GreetServiceClient, names *pb.NamesList)
 		if err := stream.Send(req); err != nil {
 			log.Fatalf("Error while sending %v", err)
 		}
-		log.Printf("Send the request with name: &s", name)
+		log.Printf("Send the request with name: %s", name)
 		time.Sleep(2 * time.Second)
 	}
 
