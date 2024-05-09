@@ -21,11 +21,9 @@ This project demonstrates the implementation of four types of communication betw
 
 ## Installation
 
-1. Clone the repository:
-   git clone https://github.com/Kevincxv/Go-gRPC-Demo
-   cd Go-gRPC-Demo
-2. Install Dependencies:
-   go mod tidy
+1. Clone the repository: git clone https://github.com/Kevincxv/Go-gRPC-Demo
+2. Choose Directory: cd Go-gRPC-Demo
+3. Install Dependencies: go mod tidy
 
 ## Compolling Protocol Buffers
 - protoc --go_out=. --go-grpc_out=. proto/greet.proto
