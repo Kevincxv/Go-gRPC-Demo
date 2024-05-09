@@ -15,5 +15,7 @@ func callSayHello(client pb.GreetServiceClient) {
 	if err != nil {
 		log.Fatalf("Could not greet: %v", err)
 	}
+	log.Printf("Unary Started")
 	log.Printf("%s", res.Message)
+	log.Printf("Unary Finished")
 }

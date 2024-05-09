@@ -9,7 +9,7 @@ import (
 )
 
 func callSayHelloServerStream(client pb.GreetServiceClient, names *pb.NamesList) {
-	log.Printf("Streaming Started")
+	log.Printf("Server Streaming Started")
 	stream, err := client.SayHelloServerStreaming(context.Background(), names)
 	if err != nil {
 		log.Fatalf("Could not send names: %v", err)
@@ -25,5 +25,5 @@ func callSayHelloServerStream(client pb.GreetServiceClient, names *pb.NamesList)
 		}
 		log.Println(message)
 	}
-	log.Printf("Streaming Finished")
+	log.Printf("Server Streaming Finished")
 }
